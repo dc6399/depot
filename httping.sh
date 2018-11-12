@@ -153,6 +153,6 @@ proto=`echo $host | awk -F'://' '{print $1}'`
 
             ;;  
           *)
-          echo -e "\e[033mUsage: sh  $0 [status|failed|min|avg|max|eror]\e[0m"
+          echo -e "\e[033mUsage: sh  $0 [status|failed|min|avg|max|error]\e[0m"
         esac  
   fi
