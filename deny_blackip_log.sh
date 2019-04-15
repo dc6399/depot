@@ -32,7 +32,7 @@ function check(){
                                 echo "$black_ip (white_ip)" >>./black_ip.txt
                         else
                                 echo $black_ip >>./black_ip.txt     
-                                iptables -nL | grep $black_ip ||(iptables -I INPUT -s $black_ip -j DROP & echo "$black_ip  `date +%Y-%m-%d %H:%M:%S`">>./deny.log)
+                                iptables -nL | grep $black_ip ||(iptables -I INPUT -s $black_ip -j DROP & echo "$black_ip  `date +%Y-%m-%d/%H:%M:%S`">>./deny.log)
                                 sleep 3
                         fi
                 done
